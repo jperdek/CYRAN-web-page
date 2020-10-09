@@ -1,0 +1,190 @@
+
+.teamInvitation {
+	display: grid;
+	grid-template-areas: "member0" "otherMembers";
+}
+
+@media(min-width: 1200px){ 
+	.otherMemebers {
+		grid-area: otherMembers;
+		display: grid;
+		grid-template-areas: "member1  member2 member3" "member4 member5 member6";
+		grid-template-columns: 1fr 1fr 1fr;
+	}	
+}
+
+@media(max-width: 1200px) and (min-width: 700px){ 
+	.otherMemebers {
+		grid-area: otherMembers;
+		display: grid;
+		grid-template-areas: "member1  member2" "member3 member4" "member5 member6";
+		grid-template-columns: 1fr 1fr;
+	}	
+}
+
+@media(max-width: 700px){ 
+	.otherMemebers {
+		grid-area: otherMembers;
+		display: grid;
+		grid-template-areas: "member1" "member2" "member3" "member4" "member5" "member6";
+	}	
+}
+
+.memberDescription {
+	display: inline-block;
+	font-size: 1.10rem;
+	font-family: 'Domine', serif;
+	line-height: 1.7;
+	color: gray;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.cardOfMemeber {
+	position: relative;
+	display: grid;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	grid-template-areas: "memberImage" "memberDescription";
+}
+
+.memberImage {
+	grid-area: memberImage;
+}
+
+.memberDescription {
+	grid-area: memberDescription;
+}
+
+
+.member0 {
+	grid-area: member0;
+	margin: 0 10%;
+}
+
+.member1 {
+	grid-area: member1;
+}
+
+.member2 {
+	grid-area: member2;
+}
+
+.member3 {
+	grid-area: member3;
+}
+
+.member4 {
+	grid-area: member4;
+}
+
+.member5 {
+	grid-area: member5;
+}
+
+.member6 {
+	grid-area: member6;
+}
+
+.memberInfo {
+	font-size: 2rem;
+	text-align: center;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+}
+
+.memberInfoName {
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+
+.memberImage {
+	width: 60%;
+	border-radius: 50% 50% 0 50%;
+}
+
+
+@media(min-width: 600px){
+	.cardOfLeader {
+		position: relative;
+		display: grid;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		grid-template-areas: "memberImage leaderDescription";
+		grid-template-columns: 1fr 2fr;
+	}
+	
+	.leaderInfo {
+		font-size: 4rem;
+		text-align: left;
+		margin-left: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.leaderInfoName {
+		font-size: 2rem;
+		text-align: left;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	
+}
+
+@media(max-width: 600px){
+	.cardOfLeader {
+		position: relative;
+		display: grid;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		grid-template-areas: "memberImage" "leaderDescription";
+	}
+	
+	.leaderInfo {
+		font-size: 2rem;
+		text-align: left;
+		margin-left: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.leaderInfoName {
+		font-size: 1rem;
+		text-align: left;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	
+}
+
+.leaderImage {
+	width: 300px;
+	border-radius: 50% 50% 0 50%;
+}
+
+.leaderDescription {
+	grid-area: leaderDescription;
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+
+.securityIcon {
+	width: 25%;
+	position: absolute;
+	top: 42%;
+	left: 52%;
+	z-index: 1;
+}
+
+.securityLeaderIcon {
+	width: 20%;
+	position: absolute;
+	top: 45%;
+	left: 22%;
+	z-index: 1;
+}

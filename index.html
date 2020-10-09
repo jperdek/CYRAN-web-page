@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="sk" >
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Cyran Tím 19.</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="createdCSS/layout.css" />
+		<link rel="stylesheet" type="text/css" href="createdCSS/map.css" />
+		<link rel="stylesheet" type="text/css" href="createdCSS/texts.css" />
+		<link rel="stylesheet" type="text/css" href="createdCSS/cards.css" />
+		<link rel="stylesheet" type="text/css" href="createdCSS/lists.css" />
+		<link rel="stylesheet" type="text/css" href="createdCSS/processStages.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	</head>
+	<body>
+		
+		<div id="underSticky"></div>
+		<header id="stickyBar" class="sticky">	
+			<div class="contentWrapper">
+				<nav  class="cyranNavBar navbar-light navbar-expand-xl">
+					<img class="cyranLogo" src="icons/logo/cyran.svg" alt="Cyran logo"/>
+					<span ><a class="navbar-brand" href="#"></a></span> 
+					<button class="navbar-toggler togglerRight" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarsExample04">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="cyranMenu cyranMenuActive nav-link" href="#aboutProjectSection">O PROJEKTE<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="cyranMenu cyranMenuPassive nav-link" href="#actualWorkSection">ŠPRINTY</a>
+							</li>
+							<li class="nav-item">
+								<a class="cyranMenu cyranMenuPassive nav-link" href="#teamSection">TÍM</a>
+							</li>
+							<li class="nav-item">
+								<a class="cyranMenu cyranMenuPassive nav-link" href="#documentsSection">DOKUMENTY</a>
+							</li>
+							<li class="nav-item">
+								<a class="cyranMenu cyranMenuPassive nav-link" href="#downloadSection">DOWNLOAD</a>
+							</li>
+							<li class="nav-item">
+								<a class="cyranMenu cyranMenuPassive nav-link" href="#contactsSection">KONTAKTY</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+	
+		<main class="cyranMain" >
+			<section class="contentWrapper" >
+				<img src="icons/logo/cyran.svg" alt="Cyran logo"/>
+			</section>
+			
+			<section id="aboutProjectSection" class="contentWrapper">
+				<h1 class="headingH1" >O projekte</h1>
+				<p class="fontText aboutProject" >Cyran projekt je zameraný na možnosť zlepšenia a otestovania svojich schopností v simulovanej realite
+				kyberpriestoru. Účastníci riešia rôzne úlohy a snažia sa odvrátiť útoky alebo sa infiltrovať do
+				počítača cudzej osoby, prípadne podniknúť inú formu útoku. Cieľom je nájsť potencionálnu zraniteľnosť systému pre tím, ktorý sa obraňuje, prípadne získať informáciu v najčastejšie v podobe textového reťazca od brániaceho sa tímu.</p>
+			</section>
+			
+			<section id="actualWorkSection" class="contentWrapper actualWork">
+				<h1 class="headingH1" >Aktuality</h1>
+				<div class="progressManager">
+					<div class="processPart">
+						<div class="processPartLeft processContent">
+							
+						</div>	
+						<div class="progressFlow">
+							<div class="processStage">
+								<img class="bugIcon" src="icons/bug-malware-red.svg" alt="progress malware bug"/>
+							</div>
+							<div class="progressConnection"></div>
+						</div>
+						<div class="processPartRight processContent">
+							<div class="processNoteRight">
+								<p>First progress</p>
+							</div>
+						</div>
+					</div>
+					<div class="processPart">
+						<div class="processPartLeft processContent">
+							<div class="processNoteLeft">
+								<p>Second progress</p>
+							</div>
+						</div>	
+						<div class="progressFlow">
+							<div class="processStage">
+								<img class="bugIcon" src="icons/bug-malware-red.svg" alt="progress malware bug"/>
+							</div>
+							<div class="progressConnection"></div>
+						</div>
+						<div class="processPartRight processContent">
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="teamSection" class="contentWrapper">
+				<h1 class="headingH1" >Tím CYRAN 19</h1>
+				<div class="teamInvitation">
+					<div class="cardOfLeader member0">
+						<img class="leaderImage" src="pictures/members/abdo_saleh.jpg" alt="Helebrandt"/>
+						<img class="securityLeaderIcon" src="icons/person-security-red.svg" alt="Security icon"/>
+						<div class="leaderDescription">
+							<p class="leaderInfoName">Phd. Pavol Helebrandt</p>
+							<p class="leaderInfo">Product owner</p>
+						</div>
+					</div>
+					<div class="otherMemebers">
+						<div class="cardOfMemeber member1">
+							<img class="memberImage" src="pictures/members/nikola_karakas.jpg" alt="Nikola Karakas"/>
+							<img class="securityIcon" src="icons/digital-security-red.svg" alt="Security icon"/>
+							<div class="memberDescription">
+								<p class="memberInfoName">Nikola Karakaš</p>
+								<p class="memberInfo">Machine learning specialist</p>
+							</div>
+						</div>
+						<div class="cardOfMemeber member2">
+							<img class="memberImage" src="pictures/members/abdo_saleh.jpg" alt="Abdo Saleh"/>
+							<img class="securityIcon" src="icons/search-symbol-red.svg" alt="Security icon"/>
+							<div class="memberDescription">
+								<p class="memberInfoName">Abdo Saleh</p>
+								<p class="memberInfo">Security specialist, Web developer</p>
+							</div>
+						</div>
+						<div class="cardOfMemeber member3">
+							<img class="memberImage" src="pictures/members/jakub_perdek.jpg" alt="Jakub Perdek"/>
+							<img class="securityIcon" src="icons/security-alert-red.svg" alt="Security icon"/>
+							<div class="memberDescription">
+								<p class="memberInfoName">Jakub Perdek</p>
+								<p class="memberInfo">Web designer and developer, Analyst</p>
+							</div>
+						</div>
+						<div class="cardOfMemeber member4">
+							<img class="memberImage" src="pictures/members/matovic_viktor.jpg" alt="Viktor Matovic"/>
+							<img class="securityIcon" src="icons/security-shield-red.svg" alt="Security icon"/>
+							<div class="memberDescription">
+								<p class="memberInfoName">Viktor Matovič</p>
+								<p class="memberInfo">Web developer</p>
+							</div>
+						</div>
+						<div class="cardOfMemeber member5">
+							<img class="memberImage" src="pictures/members/balga_miroslav.jpg" alt="Miroslav Balga"/>
+							<img class="securityIcon" src="icons/digital-security-red.svg" alt="Security icon"/>
+							<div class="memberDescription">
+								<p class="memberInfoName">Miroslav Balga</p>
+								<p class="memberInfo">Database specialist</p>
+							</div>
+						</div>
+						<div class="cardOfMemeber member6">
+							<img class="memberImage" src="pictures/members/peter_spusta.jpg" alt="Peter Spusta"/>
+							<img class="securityIcon" src="icons/security-symbol-red.svg" alt="Security icon"/>
+							<div class="memberDescription">
+								<p class="memberInfoName">Peter Spusta</p>
+								<p class="memberInfo">Full stack developer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="documentsSection" class="contentWrapper">
+				<h1 class="headingH1" >Dokumenty</h1>
+				 <table>
+					<caption class="tableCaption">Zápisnice</caption>
+					<tr>
+						<th class="numberColumn numberColumnText" ><img src="icons/number-sign.svg" alt="#"/></th>
+						<th class="titleColumn titleColumnText">Názov</th>
+						<th class="dateColumn dateColumnText">Dátum</th>
+						<th class="downloadColumn downloadColumnText">Stiahnuť</th>
+					</tr>
+				  <tr>
+					<td class="numberText">1</td>
+					<td class="titleText" ><a class="titleLink" href="#" download="">Prvá zápisnica</a></td>
+					<td class="dateText">09.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				  <tr>
+					<td class="numberText">2</td>
+					<td class="titleText"><a class="titleLink" href="#" download="">Druhá zápisnica</a></td>
+					<td class="dateText">10.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				</table> 
+				<table>
+					<caption class="tableCaption">Backlog report</caption>
+					<tr>
+						<th class="numberColumn numberColumnText" ><img src="icons/number-sign.svg" alt="#"/></th>
+						<th class="titleColumn titleColumnText">Názov</th>
+						<th class="dateColumn dateColumnText">Dátum</th>
+						<th class="downloadColumn downloadColumnText">Stiahnuť</th>
+					</tr>
+				  <tr>
+					<td class="numberText">1</td>
+					<td class="titleText" ><a class="titleLink" href="#" download="">Export úloh č.2</a></td>
+					<td class="dateText">09.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				  <tr>
+					<td class="numberText">2</td>
+					<td class="titleText"><a class="titleLink" href="#" download="">Export úloh č.3</a></td>
+					<td class="dateText">10.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				</table> 
+				<table>
+					<caption class="tableCaption">Retrospektíva šprintov</caption>
+					<tr>
+						<th class="numberColumn numberColumnText" ><img src="icons/number-sign.svg" alt="#"/></th>
+						<th class="titleColumn titleColumnText">Názov</th>
+						<th class="dateColumn dateColumnText">Dátum</th>
+						<th class="downloadColumn downloadColumnText">Stiahnuť</th>
+					</tr>
+				  <tr>
+					<td class="numberText">1</td>
+					<td class="titleText" ><a class="titleLink" href="#" >Retrospektíva šprintu č. 2</a></td>
+					<td class="dateText">09.10.2020</td>
+					<td class="downloadContent"><a class="titleLink" href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				  <tr>
+					<td class="numberText">2</td>
+					<td class="titleText"><a class="titleLink" href="#" download="">Retrospektíva šprintu č. 3</a></td>
+					<td class="dateText">10.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				</table> 
+				<table>
+					<caption class="tableCaption">Dokumentácie</caption>
+					<tr>
+						<th class="numberColumn numberColumnText" ><img src="icons/number-sign.svg" alt="#"/></th>
+						<th class="titleColumn titleColumnText">Názov</th>
+						<th class="dateColumn dateColumnText">Dátum</th>
+						<th class="downloadColumn downloadColumnText">Stiahnuť</th>
+					</tr>
+				  <tr>
+					<td class="numberText">1</td>
+					<td class="titleText" ><a class="titleLink" href="#" download="">Metodika písania dokumentácie</a></td>
+					<td class="dateText">09.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				  <tr>
+					<td class="numberText">2</td>
+					<td class="titleText"><a class="titleLink" href="#" download="">Metodika komunikácie</a></td>
+					<td class="dateText">10.10.2020</td>
+					<td class="downloadContent" ><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				</table> 
+			</section>
+			
+			<section id="downloadSection" class="contentWrapper">
+				<h1 class="headingH1" >Download</h1>
+				<table>
+					<tr>
+						<th class="numberColumn numberColumnText" ><img src="icons/number-sign.svg" alt="#"/></th>
+						<th class="titleColumn titleColumnText">Názov</th>
+						<th class="dateColumn dateColumnText">Dátum</th>
+						<th class="downloadColumn downloadColumnText">Stiahnuť</th>
+					</tr>
+				  <tr>
+					<td class="numberText">1</td>
+					<td class="titleText" ><a class="titleLink" href="#" download="">Inštalačná príručka</a></td>
+					<td class="dateText">09.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				  <tr>
+					<td class="numberText">2</td>
+					<td class="titleText"><a class="titleLink" href="#" download="">Používateľská príručka</a></td>
+					<td class="dateText">10.10.2020</td>
+					<td class="downloadContent"><a href="#" download=""><img class="pdfIcon" src="icons/pdf.svg" alt="download link"/></a></td>
+				  </tr>
+				</table> 
+			</section>
+			
+			<section id="contactsSection" class="contentWrapper">
+				<h1 class="headingH1NotMargin" >Kontakty</h1>
+				<div class="doubleHalvesCenterMap">
+					<div id="relativeMap" class="mapLargeSize firstHalfCenterMap">
+						<div class="mapouter inForeground"><div class="gmap_canvas"><iframe class="shadowBottomRightOnly circleShape" width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=stu%20fiit&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a></div></div>	
+					</div>
+					<div id="relativeMap" class="mapMediumSize firstHalfCenterMap">
+						<div class="mapouter inForeground"><div class="gmap_canvas"><iframe class="shadowBottomRightOnly circleShape" width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=stu%20fiit&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a></div></div>	
+					</div>
+					<div class="secondHalfCenterMap">	
+						<div class="contactInfo">
+							<div class="addressPartContact">
+								<h3 class="alignLeft marginBottom subMenu">Adresa</h3>
+								<p class="fontText block">FIIT STU v Bratislave<br/>
+								842 16 Bratislava 4</p>
+							</div>
+							<div class="emailPartContact">
+								<h3 class="alignLeft marginBottom subMenu">Kontakt na tím</h3>
+								<p class="fontText block">e-mail: xperdek@stuba.sk</p>
+							</div>
+						</div>						
+					</div>
+					<div id="relativeMap" class="mapSmallSize firstHalfCenterMap">
+						<div class="mapouter inForeground"><div class="gmap_canvas"><iframe class="shadowBottomRightOnly circleShape" width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=stu%20fiit&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a></div></div>	
+					</div>
+					<div id="relativeMap" class="mapSmallSizeInside">
+							<div class="mapouter"><div class="gmap_canvas"><iframe class="shadowBottomRightOnly circleShape" width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=stu%20fiit&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a></div></div>	
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<footer class="cyranFooter">
+			<img  class="firewallImage" src="icons/firewall-red-footer.svg" alt="Firewall image"/>
+			<div id="insideFooterContent">
+				<div id="footerMenu" class="navbar navbar-expand-lg">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="cyranMenu nav-link whiteText" href="#aboutProjectSection">O PROJEKTE<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="cyranMenu nav-link whiteText" href="#actualWorkSection">ŠPRINTY</a>
+						</li>
+						<li class="nav-item">
+							<a class="cyranMenu nav-link whiteText" href="#teamSection">TÍM</a>
+						</li>
+						<li class="nav-item">
+							<a class="cyranMenu nav-link whiteText" href="#documentsSection">DOKUMENTY</a>
+						</li>
+						<li class="nav-item">
+							<a class="cyranMenu nav-link whiteText" href="#downloadSection">DOWNLOAD</a>
+						</li>
+						<li class="nav-item">
+							<a class="cyranMenu nav-link whiteText" href="#contactsSection">KONTAKTY</a>
+						</li>
+					</ul>
+				</div>
+				<p id="footerMaker" class="whiteText" >&copy; 2020. Návrh od <a class="whiteText boldText" href="#">CYRAN, Tím 19.</a> Vytvorené tímom <a class="whiteText boldText" href="#">CYRAN</a>.</p>
+			</div>
+		</footer>
+
+		<script src="createdJS/usedJS.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+	</body>
+	
+</html>

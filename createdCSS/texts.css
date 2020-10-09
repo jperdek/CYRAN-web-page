@@ -1,0 +1,191 @@
+
+@font-face {
+  font-family: 'Geomanist-Bold';
+  src: 
+	   local('fonts/hinted-Geomanist-Bold.ttf'),
+	   url('fonts/hinted-Geomanist-Bold.ttf');
+} 
+
+p {
+	font-family: 'Domine', serif;
+}
+
+a.font-open-sans-regular {
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-weight: bold;
+}
+
+.fontText {
+	display: inline-block;
+	font-size: 2rem;
+	font-family: 'Domine', serif;
+	line-height: 1.7;
+	color: gray;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.headingH1 {
+	color:  #FFFAFA;
+}
+
+.headingH1NotMargin {
+	color:  #FFFAFA;
+}
+
+@media(min-width: 767px){ 
+	.headingH1 {
+		font-size: 5rem;
+		line-height: 4.7rem;
+		font-weight: bold;
+		margin-bottom: 5rem;
+	}
+	
+	.headingH1NotMargin {
+		font-size: 5rem;
+		line-height: 4.7rem;
+		font-weight: bold;
+	}
+}
+
+@media(max-width: 767px) and (min-width: 510px){ 
+	.headingH1 {
+		font-size: 4rem;
+		line-height: 1.2;
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+	}
+	
+	.headingH1NotMargin {
+		font-size: 4rem;
+		line-height: 1.2;
+		font-weight: bold;
+	}
+}
+
+@media(max-width: 510px) { 
+	.headingH1 {
+		font-size: 3rem;
+		line-height: 1.2;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+	
+	.headingNotMargin {
+		font-size: 3rem;
+		line-height: 1.2;
+		font-weight: bold;
+	}
+}
+
+.whiteText {
+	color: white;
+}
+
+
+.headingH1Two {
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.alignLeft {
+	text-align: left;
+	font-weight: bold !important;
+}
+
+.marginBottom {
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+
+
+.subMenu {
+	color: #DC143C;
+}
+
+.cyranMenuActive {
+	color: #DC143C !important;
+}
+
+.cyranMenuPassive {
+	color: #333333 !important;
+}
+
+.cyranMenuActive:hover, .cyranMenu:hover {
+	color: #DC143C !important;
+}
+
+
+
+.boldText {
+	font-weight: bold;
+}
+
+.hideLink:hover {
+	color: #00B2A9;
+}
+
+
+.boldText:hover {
+	font-weight: bold;
+	text-decoration: none;	
+}
+
+.whiteText:hover {
+	color: white;
+	text-decoration: none;
+}
+
+
+.geomanistFont, .geomanistFontHeight {
+	font-weight: bold;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+@media(min-width: 2279px){ 
+	.geomanistFont {
+		font-size: 5rem;
+	}
+	
+	.geomanistFontHeight {
+		font-size: 5rem;
+	}
+}
+
+@media(max-width: 1279px) and (min-width: 1023px){ 
+	.geomanistFont {
+		font-size: 2.5rem;
+	}
+	
+	.geomanistFontHeight {
+		font-size: 4rem;
+	}
+}
+
+@media(max-width: 1023px) and (min-width: 510px){ 
+	.geomanistFont {
+		font-size: 2rem;
+	}
+	
+	.geomanistFontHeight {
+		font-size: 4rem;
+	}
+}
+
+
+@media(max-width: 510px){ 
+	.geomanistFont {
+		font-size: 1.5rem;
+	}
+	
+	.geomanistFontHeight {
+		font-size: 3rem;
+	}
+}
+	

@@ -1,0 +1,359 @@
+
+
+@font-face {
+  font-family: 'Domine';
+  src: /*url('fonts/Domine-Bold.ttf') format('truetype'),*/
+	   local('fonts/Domine-Bold.ttf');  
+} 
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: /*url('fonts/OpenSans-Regular.ttf') format('truetype'),*/
+       local('fonts/OpenSans-Regular.ttf'); 
+} 
+
+
+
+body {
+	width: 100%;
+	font-size: 18px;
+	font: 13px/20px PTSansRegular,Arial,Helvetica,sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+html {
+	font-size: 18px;
+}
+
+.notDisplay {
+	display: none;
+}
+
+@media(min-width: 1250px){ 
+	.contentWrapper {
+		width: 80%;
+		margin: 0 auto; 
+	}
+}
+
+@media(max-width: 1250px){ 
+	.contentWrapper {
+		width: 90%;
+		margin: 0 auto; 
+	}
+}
+
+header {
+	display: block;
+	position: sticky;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+
+
+.stickyStyle {
+	box-shadow: 0px 2px 1px #EDEDED;
+}
+
+.togglerRight {
+	float: right;
+	margin-top: calc((110px - 33.75px) / 2);
+}
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  z-index: 101;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+	width: 35px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	filter: drop-shadow(9px 9px 9px rgba(0,0,0,0.3));
+	float: left;
+}
+
+img {
+	width: 100%;
+}
+
+
+section~section {
+	margin-top: 10rem !important;
+}
+
+div.relativePart~section {
+	margin-top: 10rem !important;
+}
+
+.cyranLogo {
+	height: 2.5cm;
+	width: 7.5cm;
+}
+
+.cyranMain {
+	background-color: black;
+}
+
+.cyranFooter {
+	background-color: black;
+	position: relative;
+}
+
+
+.aboutProject {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+@media(min-width: 1200px){
+	
+	#navbarsExample04 {
+		grid-area: menu;
+	}
+	
+	.cyranLogo {
+		grid-area: nexteriaLogo;
+	}
+	
+	.cyranNavBar {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 170px auto;
+		grid-template-areas: "nexteriaLogo menu";
+		justify-content: space-between !important;
+		align-items: center;
+		margin-left:0;
+		margin-right: 0;
+	}
+	
+	
+}
+
+.socialMediaRef {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.whiteComponents {
+	filter: invert(100%) !important;
+}
+
+.shadowBottomRight{
+	box-shadow: 0.5rem 0.5rem 50px #999;
+}
+
+.cyranMenu~.cyranMenu {
+	margin-right: 1rem;
+}
+
+.cyranMenu {
+	font-weight: 800;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: #333333;
+	width: 100%;
+	float: right;
+}
+
+main {
+	padding-top: 100px;
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	display: block;
+	background-repeat:no-repeat;
+}
+
+
+@media(max-width: 1000px) {
+	.cyranMenu {
+		text-align: center;
+	}
+}
+
+@media(max-width: 767px) {
+	footer {
+		background-size: cover;
+	}	
+
+}
+
+@media(min-width: 767px) {
+	footer {
+		background-size: 100% auto;
+	}
+}
+
+.relativePart {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.relativeAndHightZIndex{
+	position: relative;
+	z-index: 100;
+}
+
+
+
+
+
+
+@media(min-width: 1800px) {
+	#insideFooterContent {
+		display: grid;
+		grid-row-gap: 0.5rem;
+		justify-items: center; 
+		grid-template-areas: "footerMenu" "footerMaker";
+		background-color: black;
+		width: 100%;
+		padding-top: 36rem;
+	}
+	
+	.firewallImage {
+		position: absolute;
+		width: 100%;
+		bottom: 8rem;
+		z-index: 1;
+	}
+}
+
+@media(max-width: 1800px) and (min-width: 1100px) {
+	#insideFooterContent {
+		display: grid;
+		grid-row-gap: 0.5rem;
+		justify-items: center; 
+		grid-template-areas: "footerMenu" "footerMaker";
+		background-color: black;
+		width: 100%;
+		padding-top: 28rem;
+	}
+	
+	.firewallImage {
+		position: absolute;
+		width: 100%;
+		bottom: 6rem;
+		z-index: 1;
+	}
+}
+
+@media(max-width: 1100px) and (min-width: 994px) {
+	#insideFooterContent {
+		display: grid;
+		grid-row-gap: 0.5rem;
+		justify-items: center; 
+		grid-template-areas: "footerMenu" "footerMaker";
+		background-color: black;
+		width: 100%;
+		padding-top: 20rem;
+	}
+	
+	.firewallImage {
+		position: absolute;
+		width: 100%;
+		bottom: 6rem;
+		z-index: 1;
+	}
+}
+
+@media(max-width: 994px) and (min-width: 769px) {
+	#insideFooterContent {
+		display: grid;
+		grid-row-gap: 0.5rem;
+		justify-items: center; 
+		grid-template-areas: "footerMenu" "footerMaker";
+		background-color: black;
+		width: 100%;
+		padding-top: 18rem;
+	}
+	
+	.firewallImage {
+		position: absolute;
+		width: 100%;
+		bottom: 18rem;
+		z-index: 1;
+	}
+}
+
+@media(max-width: 769px) and (min-width: 480px) {
+	#insideFooterContent {
+		display: grid;
+		grid-row-gap: 0.5rem;
+		justify-items: center; 
+		grid-template-areas: "footerMenu" "footerMaker";
+		background-color: black;
+		width: 100%;
+		padding-top: 23rem;
+	}
+	
+	.firewallImage {
+		position: absolute;
+		width: 100%;
+		bottom: 18rem;
+		z-index: 1;
+	}
+}
+
+@media(min-width: 350px) and (max-width: 480px) {
+	#insideFooterContent {
+		display: grid;
+		grid-row-gap: 0.5rem;
+		justify-items: center; 
+		grid-template-areas: "footerMenu" "footerMaker";
+		background-color: black;
+		width: 100%;
+		padding-top: 9rem;
+	}
+	
+	.firewallImage {
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+}
+	
+@media(max-width: 350px) {
+	#insideFooterContent {
+		display: grid;
+		grid-row-gap: 0.5rem;
+		justify-items: center; 
+		grid-template-areas: "footerMenu" "footerMaker";
+		background-color: black;
+		width: 100%;
+		padding-top: 8rem;
+	}
+	
+	.firewallImage {
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+#footerMenu {
+	grid-area: footerMenu;
+}
+
+#footerMaker {
+	grid-area: footerMaker;
+	padding-bottom: 1rem;
+}
+
+.inForeground {
+	position: absolute;
+	z-index: 10;
+	left: 5rem;
+}
+
+.block {
+	display: block !important;
+}

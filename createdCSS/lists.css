@@ -1,0 +1,121 @@
+
+.pdfIcon {
+	height: 35px;
+}
+
+.numberColumn {
+	width: 7%;
+}
+
+.downloadColumn {
+	width: 15%;
+}
+
+.dateColumn {
+	width: 18%;
+}
+
+.titleColumn {
+	width: 60%;
+}
+
+.downloadColumnText {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.dateColumnText {
+	padding-left: 1rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.titleColumnText {
+	padding-left: 1rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.numberText {
+	text-align: center;
+	font-weight: bold;
+}
+
+.titleText {
+	padding-left: 1rem;
+}
+
+.dateText {
+	padding-left: 1rem;
+}
+
+
+
+
+table{
+	border: 8px solid black;
+	border-radius: 50px;
+	border-collapse: collapse;
+	border-spacing: 5px;
+	width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+.selectedTableHeading {
+	background-color: silver !important;
+}
+
+tr:nth-child(even) {
+  background-color: silver;
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.tableCaption {
+	display: table-caption;
+	caption-side: top;
+	font-weight: bold;
+	color: red;
+	font-size: 3rem;
+	text-align: center;
+}
+
+table~table {
+	margin-top: 3rem;
+}
+
+
+@media(max-width: 700px) { 
+	.dateColumnText {
+		display: none;
+	}
+
+	.downloadColumnText {
+		display: none;
+	}
+	
+	.dateText {
+		display: none;
+	}
+	
+	.downloadContent {
+		display: none;
+	}
+}
+
+@media(min-width: 700px){
+	.titleLink {
+		pointer-events: none;
+		text-decoration: none;
+		color: black;
+	}
+}
+

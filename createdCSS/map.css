@@ -1,0 +1,317 @@
+
+
+@media(min-width: 1200px){
+	.mapLargeSize {
+		display: block !important; 
+	}
+
+	.mapMediumSize {
+		display: none !important;
+	}
+	
+	.mapSmallSize {
+		display: none !important;
+	}
+	
+	.mapSmallSizeInside {
+		display: none !important;
+	}
+	
+	
+	
+	.circleShape {
+		position: relative;
+		border-radius: 50%;
+		right: 300px;
+		border: 0;
+		overflow: hidden;
+		margin: 0;
+	}
+
+	.gmap_canvas {
+		width: 800px !important;
+		height: 600px !important;
+	}
+
+	.mapouter {
+		text-align:right;
+		height:500px;
+		width:500px;
+	}
+
+	.gmap_canvas  {
+		overflow:hidden;
+		background:none!important;
+		height:500px;
+		width:500px;
+	}
+	
+	
+	
+	.doubleHalvesCenterMap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+		grid-template-areas: "firstHalfCenterMap secondHalfCenterMap";
+	}
+
+	.firstHalfCenterMap {
+		grid-area: firstHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.secondHalfCenterMap {
+		grid-area: secondHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+	}
+}
+
+
+@media(min-width: 1000px) and (max-width: 1200px){
+	.mapLargeSize {
+		display: none !important; 
+	}
+
+	.mapMediumSize {
+		display: block !important;
+	}
+	
+	.mapSmallSize {
+		display: none !important;
+	}
+	
+	.mapSmallSizeInside {
+		display: none !important;
+	}
+	
+	
+
+	.circleShape {
+		position: relative;
+		right: 300px;
+		border-radius: 50%;
+		border: 0;
+		overflow: hidden;
+		margin: 0;
+	}
+
+	.gmap_canvas {
+		width: 700px !important;
+		height: 500px !important;
+	}
+
+	.mapouter {
+		text-align: right;
+		height: 400px;
+		width: 400px;
+	}
+
+	.gmap_canvas  {
+		overflow: hidden;
+		background: none!important;
+		height: 400px;
+		width: 400px;
+	}
+	
+	
+	
+	.doubleHalvesCenterMap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+		grid-template-areas: "firstHalfCenterMap secondHalfCenterMap";
+	}
+
+	.firstHalfCenterMap {
+		grid-area: firstHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.secondHalfCenterMap {
+		grid-area: secondHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+	}
+
+
+}
+
+
+@media(min-width: 767px) and (max-width: 1000px){
+	.mapLargeSize {
+		display: none !important; 
+	}
+
+	.mapMediumSize {
+		display: none !important;
+	}
+	
+	.mapSmallSize {
+		display: block !important;
+	}
+	
+	.mapSmallSizeInside {
+		display: none !important;
+	}
+	
+	
+	
+	.circleShape {
+		position: relative;
+		right: 300px;
+		border-radius: 50%;
+		border: 0;
+		overflow: hidden;
+		margin: 0;
+	}
+
+	.gmap_canvas {
+		width: 600px !important;
+		height: 400px !important;
+	}
+
+	.mapouter {
+		text-align: right;
+		height: 300px;
+		width: 300px;
+	}
+
+	.gmap_canvas  {
+		overflow: hidden;
+		background: none!important;
+		height: 300px;
+		width: 300px;
+	}
+	
+	
+	.doubleHalvesCenterMap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+		grid-template-areas: "firstHalfCenterMap secondHalfCenterMap";
+	}
+
+	.firstHalfCenterMap {
+		grid-area: firstHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.secondHalfCenterMap {
+		grid-area: secondHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+	}
+
+}
+
+@media(min-width: 500px) and (max-width: 767px){
+	.mapLargeSize {
+		display: none !important; 
+	}
+
+	.mapMediumSize {
+		display: none !important;
+	}
+	
+	.mapSmallSize {
+		display: none !important;
+	}
+	
+	.mapSmallSizeInside {
+		display: grid !important;
+		grid-area: mapSmallSizeInside;
+		
+	}
+	
+	
+
+	.circleShape {
+		position: relative;
+		right: 165px;
+		border-radius: 50%;
+		border: 0;
+		overflow: hidden;
+		margin: 0;
+	}
+
+	.gmap_canvas {
+		width: 600px !important;
+		height: 300px !important;
+	}
+
+	.mapouter {
+		position: absolute;
+		z-index: 2;
+		text-align: right;
+		height: 300px;
+		width: 300px;
+	}
+
+	.gmap_canvas  {
+		background: none!important;
+		height: 300px;
+		width: 300px;
+	}
+	
+	
+	
+	.doubleHalvesCenterMap {
+		display: grid;
+		grid-template-areas: "secondHalfCenterMap" "mapSmallSizeInside";
+		background-color: black;
+	}
+
+	.firstHalfCenterMap {
+		display: none !important;
+	}
+
+	.secondHalfCenterMap {
+		grid-area: secondHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+		position: relative;
+	}
+	
+
+}
+
+
+@media(max-width: 500px){
+	.mapLargeSize {
+		display: none !important; 
+	}
+
+	.mapMediumSize {
+		display: none !important;
+	}
+	
+	.mapSmallSize {
+		display: none !important;
+	}
+	
+	.mapSmallSizeInside {
+		display: none !important;
+	}
+	
+	
+	
+	.doubleHalvesCenterMap {
+		display: grid;
+		grid-template-areas: "secondHalfCenterMap";
+	}
+
+	.firstHalfCenterMap {
+		display: none;
+	}
+
+	.secondHalfCenterMap {
+		grid-area: secondHalfCenterMap;
+		align-self: center;
+		justify-self: center;
+	}
+	
+}

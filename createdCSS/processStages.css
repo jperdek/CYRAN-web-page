@@ -1,0 +1,74 @@
+
+.processPart {
+	display: grid;
+	grid-template-areas: "processPartLeft progressFlow processPartRight";
+	grid-template-columns: 1fr 100px 1fr;
+}
+
+.processPartLeft { 
+	grid-area: processPartLeft;
+}
+
+.processNoteLeft {
+	float: right;
+	border-radius: 35px;
+	background-color: #eee;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	margin-right: 1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.processNoteRight {
+	float: left;
+	border-radius: 35px;
+	background-color: #eee;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	margin-left: 1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.progressFlow {
+	grid-area: progressFlow;
+	min-height: 300px;
+	display: grid;
+	grid-template-areas: "processStage" "progressConnection";
+	grid-template-rows: 100px 1fr;
+}
+
+.processPartRight {
+	grid-area: processPartRight;
+}
+
+.processStage {
+	grid-area: processStage;
+	border-radius: 50%;
+	border: 5px solid white;
+	display: grid;
+	grid-template-areas: "bugIcon";
+	
+}
+
+.progressConnection {
+	grid-area: progressConnection;
+	background-clip: content-box;
+	padding-left: calc(50% - 2px);
+	padding-right: calc(50% - 2px);
+	background-color: white;
+}
+
+.bugIcon {
+	grid-area: bugIcon;
+	width: 75px;
+	height: 75px;
+	justify-self: center;
+	align-self: center;
+}
+
