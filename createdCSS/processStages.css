@@ -7,10 +7,35 @@
 
 .processPartLeft { 
 	grid-area: processPartLeft;
+	justify-self: right;
+}
+
+.processPartRight {
+	grid-area: processPartRight;
+	justify-self: left;
+}
+
+@media(max-width: 767px) {
+	.processPartLeft { 
+		max-width: calc(50vw - 100px);
+	}	
+
+	.processPartRight {
+		max-width: calc(50vw - 100px);
+	}
+}
+
+@media(min-width: 767px) {
+	.processPartLeft { 
+		max-width: calc(40vw - 100px);
+	}
+	
+	.processPartRight {
+		max-width: calc(40vw - 100px);
+	}
 }
 
 .processNoteLeft {
-	float: right;
 	border-radius: 35px;
 	background-color: #eee;
 	margin-top: 1rem;
@@ -23,7 +48,6 @@
 }
 
 .processNoteRight {
-	float: left;
 	border-radius: 35px;
 	background-color: #eee;
 	margin-top: 1rem;
@@ -41,10 +65,6 @@
 	display: grid;
 	grid-template-areas: "processStage" "progressConnection";
 	grid-template-rows: 100px 1fr;
-}
-
-.processPartRight {
-	grid-area: processPartRight;
 }
 
 .processStage {
